@@ -5,19 +5,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tarea 2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body id="body">
+<div class="container mt-4">   
     <h1 id="titulo">Bienvenido!</h1>
     <form>
-        <label>Nombre</label>
-        <input type="text" id="nombre-usuario" placeholder="Ingresa tu nombre"/><br>
-        <label>Apellido</label>
-        <input type="text" id="apellido-usuario" placeholder="Ingresa tu apellido"/><br>
-        <label>Edad</label>
-        <input type="text" id="edad-usuario" placeholder="Ingresa tu edad"/><br>
-        <button id="mostrar-datos-usuario">Mostrar datos</button>
+        <label class="form-label">Nombre</label>
+        <input type="text" id="nombre-usuario" class="form-control" placeholder="Ingresa tu nombre"/><br>
+        <label class="form-label">Apellido</label>
+        <input type="text" id="apellido-usuario" class="form-control" placeholder="Ingresa tu apellido"/><br>
+        <label class="form-label">Edad</label>
+        <input type="text" id="edad-usuario" class="form-control" placeholder="Ingresa tu edad"/><br>
+        <button id="mostrar-datos-usuario" class="btn btn-primary">Mostrar datos</button>
+
+        <div id="mostrar-dato" class="mt-3">
+
+        </div>
     </form>
+</div>
     <script src='main2.js'></script>
 </body>
 </html>

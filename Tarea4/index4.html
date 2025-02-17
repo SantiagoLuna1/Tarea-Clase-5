@@ -5,22 +5,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tarea 4</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     
 </head>
 <body>
-    <ol>
-        <li>10</li>
-        <li>20</li>
-        <li>10</li>
-        <li>40</li>
-        <li>50</li>
-    </ol>
-    <p>El promedio es <em id="promedio"></em></p>
-    <p>El numero mas pequeño es <em id="minimo"></em></p>
-    <p>El numero mas grande es <em id="maximo"></em></p>
-    <p>El numero mas frecuente es <em id="frecuente"></em></p>
-
+    <div class="lista">
+        <ol>
+            <li>10</li>
+            <li>20</li>
+            <li>10</li>
+            <li>40</li>
+            <li>50</li>
+        </ol>
+    </div>
+    <div class="resultado">
+        <p class="form-control">El promedio es <em id="promedio"></em></p>
+        <p class="form-control">El numero mas pequeño es <em id="minimo"></em></p>
+        <p class="form-control">El numero mas grande es <em id="maximo"></em></p>
+        <p class="form-control">El numero mas frecuente es <em id="frecuente"></em></p>
+    </div>
     <script src='main4.js'></script>
 </body>
 </html>

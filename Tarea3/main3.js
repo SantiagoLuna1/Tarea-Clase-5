@@ -28,9 +28,10 @@ function distincionTiempo (){
 const $calcularTiempoTotal = document.querySelector('#calcular');
 
 $calcularTiempoTotal.onclick = function(){
-    const cuerpoPagina = document.querySelector('#body'); //<body>
+    const cuerpoPagina = document.querySelector('#mostrar-calculo'); //<body>
     const datoSumado = document.createElement('strong'); //<strong> ...
     datoSumado.textContent = distincionTiempo(); //<strong> hs min seg </strong>
+    datoSumado.classList.add('form-control');
     cuerpoPagina.appendChild(datoSumado);
     return false;
 }

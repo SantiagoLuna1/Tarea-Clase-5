@@ -5,18 +5,25 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tarea 1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
 </head>
 <body>
+<div class="container mt-4">    
     <form>
-        <label>Salario anual</label>
-        <input type="text" id="salario-anual" />
-        <label>Salario mensual</label>
-        <input type="text" disabled id="salario-mensual" />
-        <button id="calcular-salario-mensual">Calcular</button>
-        <button type="reset">Limpiar</button>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Salario anual</label>
+            <input type="text" class="form-control" id="salario-anual" placeholder="Coloca tu salario anual">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Salario mensual</label>
+            <input class="form-control" type="text" id="salario-mensual" value="" aria-label="readonly input example" readonly>
+        </div>
+        <button id="calcular-salario-mensual" class="btn btn-primary">Calcular</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
     </form>
+</div>
+</body>
     <script src='main1.js'></script>
 </body>
 </html>
